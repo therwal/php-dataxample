@@ -1,0 +1,33 @@
+body {
+    color: #666;
+    font-family: 'Arial';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+thead {
+    background: #42444e;
+    color: #fff;
+    
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+tbody tr:hover {
+  background: yellow;
+}
+
+
