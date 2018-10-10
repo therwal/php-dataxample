@@ -1,4 +1,4 @@
-let table = document.getElementById("table");
+let table = document.getElementById('table');
 
 let populateTable = (data) => {
     let str = `<thead><tr>
@@ -24,13 +24,13 @@ let populateTable = (data) => {
 }
 
        
-fetch("read.php")
+fetch('read.php')
 .then(response => {
    return response.json();
 })
-.then(jsonResponse => {
-    populateTable(jsonResponse);
+.then(json => {
+    populateTable(json);
 })
 .catch(err => {
-    // error 
+    console.log('fetch failed');
 });

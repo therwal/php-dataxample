@@ -1,8 +1,7 @@
 <?php
-require "config.php";
-
+include 'config.php';
 try {
-	$connection = new PDO("mysql:host=$host", $username, $password, $options);
+	$connection = new PDO($dsn , $username, $password, $options);
 	$sql = file_get_contents("data/init.sql");
 	$connection->exec($sql);
 	
@@ -10,3 +9,5 @@ try {
 } catch(PDOException $error) {
 	echo $sql . "<br>" . $error->getMessage();
 }
+
+?>
