@@ -6,8 +6,6 @@ try {
 	$connection->exec($sql);
 	
 	echo "Database and tables created successfully.";
-} catch(PDOException $error) {
+} catch (PDOException $error) {
 	echo $sql . "<br>" . $error->getMessage();
 }
-
-?>
